@@ -1,3 +1,4 @@
+
 # FreshFind — Fresh All Along
 
 A frontend-only React + Vite single-page app that helps residents of Doha and Qatar find local farmers markets, see which are open **right now**, and learn what produce is in season. Built for the Aptech Techwiz “Web Innovation Unleashed” SRS.
@@ -60,3 +61,7 @@ Requires Node 18+. Deploys as static files. Asset paths are absolute (`/assets/.
 ## Tools and credits
 
 Market scenes, botanical sprites and UI-kit artwork come from the project’s supplied concept sheets (`tools/build_assets.py` extracts and compresses them). Produce illustrations are generated SVG artwork (`tools/produce-art/`). AI assistance (Claude) was used to write code and documentation; all content and behaviour were reviewed and tested in the browser.
+=======
+# Fresh-Find
+A farmers market ecommerce website
+>>>>>>> dd68b8544fe435b44aa4543d2e196e90adacb9e2
