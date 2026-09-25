@@ -1,0 +1,581 @@
+[
+ {
+  "id": "west-bay",
+  "name": "Corniche Garden Market",
+  "area": "West Bay",
+  "address": "Sheraton Park, Al Corniche Street, West Bay, Doha",
+  "lat": 25.3196,
+  "lng": 51.5292,
+  "schedule": [
+   {
+    "day": 6,
+    "open": "07:00",
+    "close": "12:00"
+   },
+   {
+    "day": 3,
+    "open": "16:00",
+    "close": "21:00"
+   }
+  ],
+  "description": "Doha’s biggest Saturday market, under the palms of Sheraton Park with forty growers.",
+  "about": "What began as a handful of farm tables beside the Corniche is now the city’s busiest Saturday morning. Vegetable growers from the northern farms line the shaded paths, bakers and cheesemakers set up by the fountains, and the Wednesday evening edition is quieter — ideal for chatting to growers about next week’s harvest.",
+  "image": "/assets/markets/stall-sunflowers.webp",
+  "thumb": "/assets/markets/stall-sunflowers-sm.webp",
+  "gallery": [
+   "/assets/markets/stall-sunflowers.webp",
+   "/assets/markets/carrot-corner.webp",
+   "/assets/markets/tent-row.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "family",
+   "organic"
+  ],
+  "stalls": 42,
+  "established": 2016,
+  "phone": "+974 4400 0112"
+ },
+ {
+  "id": "al-gharrafa",
+  "name": "Al Gharrafa Garden Market",
+  "area": "Al Gharrafa",
+  "address": "Al Gharrafa Park, Al Gharrafa Street, Al Gharrafa, Al Rayyan",
+  "lat": 25.3395,
+  "lng": 51.456,
+  "schedule": [
+   {
+    "day": 5,
+    "open": "15:00",
+    "close": "20:00"
+   }
+  ],
+  "description": "A relaxed Friday-afternoon market of family farms, plant nurseries and home kitchens.",
+  "about": "Friday afternoons in the park bring growers from Al Khor and Al Shamal with whatever was picked that morning. Expect crates of greenhouse tomatoes and cucumbers, bunches of herbs, seedlings for balcony gardens and a busy corner of home-made pickles.",
+  "image": "/assets/markets/stall-peppers.webp",
+  "thumb": "/assets/markets/stall-peppers-sm.webp",
+  "gallery": [
+   "/assets/markets/stall-peppers.webp",
+   "/assets/markets/terrace-crates.webp",
+   "/assets/markets/flower-cart.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "organic",
+   "family"
+  ],
+  "stalls": 24,
+  "established": 2019,
+  "phone": "+974 4400 0145"
+ },
+ {
+  "id": "umm-salal",
+  "name": "Umm Salal Farm Market",
+  "area": "Umm Salal",
+  "address": "Farm Road, Umm Salal Mohammed, Umm Salal",
+  "lat": 25.4153,
+  "lng": 51.4061,
+  "schedule": [
+   {
+    "day": 6,
+    "open": "07:00",
+    "close": "12:00"
+   },
+   {
+    "day": 4,
+    "open": "16:00",
+    "close": "21:00"
+   }
+  ],
+  "description": "Straight from the surrounding farms: early Saturday picks and a lively Thursday evening.",
+  "about": "Set among the farms north of the city, this market is where many growers sell first. Come early on Saturday for the best leafy greens and melons, or on Thursday evening when families stroll between the stalls once the heat has gone.",
+  "image": "/assets/markets/market-lane.webp",
+  "thumb": "/assets/markets/market-lane-sm.webp",
+  "gallery": [
+   "/assets/markets/market-lane.webp",
+   "/assets/markets/village-view.webp",
+   "/assets/markets/tent-row.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "evening"
+  ],
+  "stalls": 30,
+  "established": 2017,
+  "phone": "+974 4400 0178"
+ },
+ {
+  "id": "al-sadd",
+  "name": "Al Sadd Family Market",
+  "area": "Al Sadd",
+  "address": "Suhaim Bin Hamad Street, Al Sadd, Doha",
+  "lat": 25.2848,
+  "lng": 51.4958,
+  "schedule": [
+   {
+    "day": 5,
+    "open": "16:00",
+    "close": "21:00"
+   },
+   {
+    "day": 2,
+    "open": "16:00",
+    "close": "20:00"
+   }
+  ],
+  "description": "A neighbourhood favourite for weekday evening shopping, close to home and easy to reach.",
+  "about": "Twice a week a quiet car park turns into a small market street. Regulars come for local eggs, bread and seasonal vegetables on the way home, and children make straight for the juice stall.",
+  "image": "/assets/markets/tent-row.webp",
+  "thumb": "/assets/markets/tent-row-sm.webp",
+  "gallery": [
+   "/assets/markets/tent-row.webp",
+   "/assets/markets/stall-peppers.webp",
+   "/assets/markets/awning-lights.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "family"
+  ],
+  "stalls": 18,
+  "established": 2020,
+  "phone": "+974 4400 0203"
+ },
+ {
+  "id": "al-waab",
+  "name": "Al Waab Organic Market",
+  "area": "Al Waab",
+  "address": "Al Waab Street, Al Waab, Doha",
+  "lat": 25.2622,
+  "lng": 51.4718,
+  "schedule": [
+   {
+    "day": 6,
+    "open": "08:00",
+    "close": "13:00"
+   },
+   {
+    "day": 5,
+    "open": "16:00",
+    "close": "20:00"
+   }
+  ],
+  "description": "Certified-organic growers only, from hydroponic greens to farm eggs and raw honey.",
+  "about": "Every stall here is run by an organic or pesticide-free grower. It is the best place in the city for salad leaves and herbs, and the honey table sells Sidr honey from local hives in autumn.",
+  "image": "/assets/markets/terrace-crates.webp",
+  "thumb": "/assets/markets/terrace-crates-sm.webp",
+  "gallery": [
+   "/assets/markets/terrace-crates.webp",
+   "/assets/markets/greenhouse-crates.webp",
+   "/assets/markets/carrot-corner.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "organic"
+  ],
+  "stalls": 20,
+  "established": 2018,
+  "phone": "+974 4400 0236"
+ },
+ {
+  "id": "souq-waqif",
+  "name": "Souq Waqif Market Hall",
+  "area": "Souq Waqif",
+  "address": "Souq Waqif, Al Souq, Doha",
+  "lat": 25.2869,
+  "lng": 51.5327,
+  "schedule": [
+   {
+    "day": 6,
+    "open": "07:00",
+    "close": "19:00"
+   },
+   {
+    "day": 0,
+    "open": "07:00",
+    "close": "19:00"
+   },
+   {
+    "day": 1,
+    "open": "07:00",
+    "close": "19:00"
+   },
+   {
+    "day": 2,
+    "open": "07:00",
+    "close": "19:00"
+   },
+   {
+    "day": 3,
+    "open": "07:00",
+    "close": "19:00"
+   },
+   {
+    "day": 4,
+    "open": "07:00",
+    "close": "19:00"
+   },
+   {
+    "day": 5,
+    "open": "14:00",
+    "close": "21:00"
+   }
+  ],
+  "description": "A covered, air-cooled hall open every day — the reliable choice right through summer.",
+  "about": "A permanent hall in the heart of the old souq with produce, dairy, dates and spice stalls under one roof. Because it is cooled and open daily, it is where most people shop between June and September, when outdoor markets take their summer break.",
+  "image": "/assets/markets/greenhouse-dome.webp",
+  "thumb": "/assets/markets/greenhouse-dome-sm.webp",
+  "gallery": [
+   "/assets/markets/greenhouse-dome.webp",
+   "/assets/markets/greenhouse-corner.webp",
+   "/assets/markets/greenhouse-stools.webp"
+  ],
+  "tags": [
+   "indoor",
+   "family"
+  ],
+  "stalls": 55,
+  "established": 2012,
+  "phone": "+974 4400 0269"
+ },
+ {
+  "id": "al-rayyan",
+  "name": "Al Rayyan Farmers Yard",
+  "area": "Al Rayyan",
+  "address": "Al Rayyan Al Jadeed Street, Al Rayyan",
+  "lat": 25.2925,
+  "lng": 51.4235,
+  "schedule": [
+   {
+    "day": 3,
+    "open": "16:00",
+    "close": "20:00"
+   },
+   {
+    "day": 6,
+    "open": "07:00",
+    "close": "12:00"
+   }
+  ],
+  "description": "A friendly yard market with a children’s planting table and plenty of shade.",
+  "about": "Run with a local school, the yard mixes farm stalls with a seedling swap and a planting table where children pot their own herbs to take home. Saturday mornings are the busiest.",
+  "image": "/assets/markets/carrot-corner.webp",
+  "thumb": "/assets/markets/carrot-corner-sm.webp",
+  "gallery": [
+   "/assets/markets/carrot-corner.webp",
+   "/assets/markets/flower-cart.webp",
+   "/assets/markets/village-view.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "family"
+  ],
+  "stalls": 22,
+  "established": 2018,
+  "phone": "+974 4400 0292"
+ },
+ {
+  "id": "abu-hamour",
+  "name": "Abu Hamour Fruit Market",
+  "area": "Abu Hamour",
+  "address": "Salwa Road service lane, Abu Hamour, Doha",
+  "lat": 25.2425,
+  "lng": 51.4985,
+  "schedule": [
+   {
+    "day": 5,
+    "open": "07:00",
+    "close": "11:00"
+   },
+   {
+    "day": 0,
+    "open": "16:00",
+    "close": "21:00"
+   }
+  ],
+  "description": "Fruit by the crate: local dates, melons and citrus beside regional orchard fruit.",
+  "about": "Growers and small importers share this long covered row. Local fruit takes pride of place — Khalas dates in late summer, melons in spring, citrus in winter — with orchard fruit brought in from the region the rest of the year.",
+  "image": "/assets/markets/flower-cart.webp",
+  "thumb": "/assets/markets/flower-cart-sm.webp",
+  "gallery": [
+   "/assets/markets/flower-cart.webp",
+   "/assets/markets/stall-peppers.webp",
+   "/assets/markets/terrace-crates.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "organic"
+  ],
+  "stalls": 34,
+  "established": 2014,
+  "phone": "+974 4400 0325"
+ },
+ {
+  "id": "madinat-khalifa",
+  "name": "Madinat Khalifa Dairy & Garden Market",
+  "area": "Madinat Khalifa",
+  "address": "Madinat Khalifa South, Doha",
+  "lat": 25.305,
+  "lng": 51.477,
+  "schedule": [
+   {
+    "day": 4,
+    "open": "08:00",
+    "close": "12:00"
+   },
+   {
+    "day": 6,
+    "open": "08:00",
+    "close": "12:00"
+   }
+  ],
+  "description": "Fresh laban, labneh and camel milk from local farms, plus herbs and plants.",
+  "about": "Local dairy farms bring milk, laban, labneh and fresh cheeses twice a week, alongside a garden corner of herbs, seedlings and flowering plants. Bring a cool bag.",
+  "image": "/assets/markets/greenhouse-corner.webp",
+  "thumb": "/assets/markets/greenhouse-corner-sm.webp",
+  "gallery": [
+   "/assets/markets/greenhouse-corner.webp",
+   "/assets/markets/greenhouse-crates.webp",
+   "/assets/markets/greenhouse-stools.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "organic"
+  ],
+  "stalls": 16,
+  "established": 2019,
+  "phone": "+974 4400 0358"
+ },
+ {
+  "id": "al-wakrah",
+  "name": "Al Wakrah Harbour Night Market",
+  "area": "Al Wakrah",
+  "address": "Al Wakrah Beach promenade, Al Wakrah",
+  "lat": 25.1682,
+  "lng": 51.6018,
+  "schedule": [
+   {
+    "day": 4,
+    "open": "17:00",
+    "close": "22:00"
+   },
+   {
+    "day": 5,
+    "open": "17:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "17:00",
+    "close": "22:00"
+   }
+  ],
+  "description": "Lantern-lit evening stalls by the old harbour, with street food and late-night produce.",
+  "about": "When the sun goes down the promenade fills with food stalls, fruit carts and growers selling the day’s pick. It is the best place for an evening out, and there is always sweet corn on the grill.",
+  "image": "/assets/markets/awning-lights.webp",
+  "thumb": "/assets/markets/awning-lights-sm.webp",
+  "gallery": [
+   "/assets/markets/awning-lights.webp",
+   "/assets/markets/tent-row.webp",
+   "/assets/markets/market-lane.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "evening"
+  ],
+  "stalls": 38,
+  "established": 2017,
+  "phone": "+974 4400 0391"
+ },
+ {
+  "id": "katara",
+  "name": "Katara Greenhouse Market",
+  "area": "Katara",
+  "address": "Katara Cultural Village, Katara, Doha",
+  "lat": 25.3598,
+  "lng": 51.5262,
+  "schedule": [
+   {
+    "day": 2,
+    "open": "10:00",
+    "close": "18:00"
+   },
+   {
+    "day": 3,
+    "open": "10:00",
+    "close": "18:00"
+   },
+   {
+    "day": 4,
+    "open": "10:00",
+    "close": "18:00"
+   },
+   {
+    "day": 5,
+    "open": "14:00",
+    "close": "20:00"
+   }
+  ],
+  "description": "Under glass all year: hydroponic greens, herbs, microgreens and potted plants.",
+  "about": "A cooled glasshouse hall where the city’s hydroponic growers sell leaves, herbs and microgreens harvested that morning. There are always potted herbs for the balcony and a café among the plants.",
+  "image": "/assets/markets/greenhouse-stools.webp",
+  "thumb": "/assets/markets/greenhouse-stools-sm.webp",
+  "gallery": [
+   "/assets/markets/greenhouse-stools.webp",
+   "/assets/markets/greenhouse-dome.webp",
+   "/assets/markets/greenhouse-corner.webp"
+  ],
+  "tags": [
+   "indoor",
+   "organic"
+  ],
+  "stalls": 26,
+  "established": 2021,
+  "phone": "+974 4400 0424"
+ },
+ {
+  "id": "old-airport",
+  "name": "Old Airport Neighbourhood Market",
+  "area": "Old Airport",
+  "address": "Al Matar Street, Old Airport, Doha",
+  "lat": 25.257,
+  "lng": 51.551,
+  "schedule": [
+   {
+    "day": 1,
+    "open": "16:00",
+    "close": "20:00"
+   },
+   {
+    "day": 6,
+    "open": "08:00",
+    "close": "12:00"
+   }
+  ],
+  "description": "A small, friendly market with Saturday story time for children and good family stalls.",
+  "about": "Tucked behind the community centre, this is a market where the growers know most customers by name. Saturday mornings bring a story corner for children and home-baked bread.",
+  "image": "/assets/markets/village-view.webp",
+  "thumb": "/assets/markets/village-view-sm.webp",
+  "gallery": [
+   "/assets/markets/village-view.webp",
+   "/assets/markets/market-lane.webp",
+   "/assets/markets/carrot-corner.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "family"
+  ],
+  "stalls": 15,
+  "established": 2021,
+  "phone": "+974 4400 0457"
+ },
+ {
+  "id": "lusail",
+  "name": "Lusail Boulevard Market",
+  "area": "Lusail",
+  "address": "Lusail Boulevard, Lusail",
+  "lat": 25.4165,
+  "lng": 51.495,
+  "schedule": [
+   {
+    "day": 5,
+    "open": "16:00",
+    "close": "22:00"
+   },
+   {
+    "day": 6,
+    "open": "16:00",
+    "close": "22:00"
+   }
+  ],
+  "description": "Weekend evenings on the boulevard: growers, flowers and family-friendly food stalls.",
+  "about": "The newest market in the guide takes over a stretch of the boulevard on Friday and Saturday evenings. Growers from the northern farms sit beside flower sellers and bakers, with plenty of space for pushchairs.",
+  "image": "/assets/markets/greenhouse-crates.webp",
+  "thumb": "/assets/markets/greenhouse-crates-sm.webp",
+  "gallery": [
+   "/assets/markets/greenhouse-crates.webp",
+   "/assets/markets/awning-lights.webp",
+   "/assets/markets/stall-sunflowers.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "evening",
+   "family"
+  ],
+  "stalls": 28,
+  "established": 2023,
+  "phone": "+974 4400 0481"
+ },
+ {
+  "id": "the-pearl",
+  "name": "Porto Arabia Weekend Market",
+  "area": "The Pearl",
+  "address": "La Croisette, Porto Arabia, The Pearl-Qatar",
+  "lat": 25.37,
+  "lng": 51.5505,
+  "schedule": [
+   {
+    "day": 5,
+    "open": "08:00",
+    "close": "12:00"
+   },
+   {
+    "day": 6,
+    "open": "08:00",
+    "close": "13:00"
+   }
+  ],
+  "description": "A breezy waterfront market for organic produce, artisan bread and local honey.",
+  "about": "Along the marina promenade on weekend mornings, a compact row of organic growers and artisan producers. Arrive early — the sourdough and strawberries are usually gone by ten.",
+  "image": "/assets/markets/terrace-crates.webp",
+  "thumb": "/assets/markets/terrace-crates-sm.webp",
+  "gallery": [
+   "/assets/markets/terrace-crates.webp",
+   "/assets/markets/flower-cart.webp",
+   "/assets/markets/stall-sunflowers.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "organic"
+  ],
+  "stalls": 19,
+  "established": 2022,
+  "phone": "+974 4400 0514"
+ },
+ {
+  "id": "al-thumama",
+  "name": "Al Thumama Evening Market",
+  "area": "Al Thumama",
+  "address": "Al Thumama Park, Al Thumama, Doha",
+  "lat": 25.23,
+  "lng": 51.533,
+  "schedule": [
+   {
+    "day": 2,
+    "open": "16:00",
+    "close": "21:00"
+   },
+   {
+    "day": 4,
+    "open": "16:00",
+    "close": "21:00"
+   }
+  ],
+  "description": "Weekday evening market in the park, handy for after-work vegetables and eggs.",
+  "about": "Two evenings a week the park’s lawn fills with growers and families. It is compact and easy to shop, with free parking and a play area beside the stalls.",
+  "image": "/assets/markets/market-lane.webp",
+  "thumb": "/assets/markets/market-lane-sm.webp",
+  "gallery": [
+   "/assets/markets/market-lane.webp",
+   "/assets/markets/tent-row.webp",
+   "/assets/markets/village-view.webp"
+  ],
+  "tags": [
+   "outdoor",
+   "evening",
+   "family"
+  ],
+  "stalls": 17,
+  "established": 2022,
+  "phone": "+974 4400 0547"
+ }
+]

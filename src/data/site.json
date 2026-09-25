@@ -1,0 +1,57 @@
+{
+ "name": "FreshFind",
+ "tagline": "Fresh All Along",
+ "city": "Doha",
+ "contact": {
+  "address": "FreshFind Studio, Msheireb Downtown, Doha, Qatar",
+  "lat": 25.2867,
+  "lng": 51.5262,
+  "email": "syntaxterror169@gmail.com",
+  "phone": "+974 4400 0100",
+  "hours": "Sunday to Thursday, 8:00 – 16:00",
+  "response": "We usually reply within two working days."
+ },
+ "mission": "FreshFind gathers farmers markets across Doha and Qatar into one place, so residents can see where to go, when it’s open and what’s likely to be on the stalls this week.",
+ "values": [
+  {
+   "title": "Support local growers",
+   "text": "Every market listing points shoppers to farmers who grow within a short drive of the city. More footfall at the stall means more of the price stays on the farm."
+  },
+  {
+   "title": "Eat with the seasons",
+   "text": "Our produce guide and seasonal picks show what is actually being harvested now, so it’s easier to cook with food at its best."
+  },
+  {
+   "title": "Connect neighbourhoods",
+   "text": "Markets are where neighbours meet. Clear schedules and directions make it easier for everyone to take part, not only regulars."
+  }
+ ],
+ "team": [
+  {
+   "name": "Raphaella Arboiz",
+   "role": "Web Design and Development",
+   "sprite": "herb-basil"
+  },
+  {
+   "name": "Jian Generans",
+   "role": "Web Design and Development",
+   "sprite": "potted-monstera"
+  },
+  {
+   "name": "Dennies Andres",
+   "role": "Documentation and Report",
+   "sprite": "daisies"
+  },
+  {
+   "name": "Muneer",
+   "role": "Documentation and Report",
+   "sprite": "herb-rosemary"
+  }
+ ],
+ "platform": [
+  "Runs entirely in your browser — no server, no accounts, no tracking.",
+  "Market, produce and seasonal data are read from static JSON files.",
+  "Bookmarks stay on this device; notes last only for this browser session.",
+  "FreshBot answers from a pre-written question set, not a live AI service."
+ ]
+}

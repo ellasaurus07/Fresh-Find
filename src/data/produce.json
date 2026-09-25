@@ -1,0 +1,1479 @@
+[
+ {
+  "id": "strawberry",
+  "name": "Strawberries",
+  "category": "fruits",
+  "image": "/assets/produce/strawberry.webp",
+  "months": [
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Sweet, fragrant greenhouse berries from the northern farms, at their best in the cool months.",
+  "tip": "Look for bright, glossy berries with fresh green caps. Don’t wash until just before eating.",
+  "markets": [
+   "west-bay",
+   "umm-salal",
+   "abu-hamour",
+   "old-airport",
+   "lusail",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "apple",
+  "name": "Apples",
+  "category": "fruits",
+  "image": "/assets/produce/apple.webp",
+  "months": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   1
+  ],
+  "description": "Crisp orchard apples in dozens of heritage varieties, from sharp cookers to honey-sweet eaters.",
+  "tip": "Ask growers which variety suits baking or eating. Store in a cool, dark place away from greens.",
+  "markets": [
+   "abu-hamour",
+   "souq-waqif",
+   "al-rayyan",
+   "al-gharrafa",
+   "old-airport"
+  ],
+  "organic": false
+ },
+ {
+  "id": "peach",
+  "name": "Peaches",
+  "category": "fruits",
+  "image": "/assets/produce/peach.webp",
+  "months": [
+   6,
+   7,
+   8,
+   9
+  ],
+  "description": "Juicy stone fruit from regional orchards, soft and sweet when ripe.",
+  "tip": "A ripe peach smells sweet at the stem and gives slightly when pressed. Ripen at room temperature.",
+  "markets": [
+   "umm-salal",
+   "abu-hamour",
+   "al-sadd"
+  ],
+  "organic": false
+ },
+ {
+  "id": "blueberries",
+  "name": "Blueberries",
+  "category": "fruits",
+  "image": "/assets/produce/blueberries.webp",
+  "months": [
+   6,
+   7,
+   8
+  ],
+  "description": "Small, dusky berries from hillside bushes, great fresh or frozen for winter.",
+  "tip": "Choose firm berries with a silvery bloom. Refrigerate unwashed for up to a week.",
+  "markets": [
+   "abu-hamour",
+   "al-waab",
+   "umm-salal",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "lemon",
+  "name": "Lemons",
+  "category": "fruits",
+  "image": "/assets/produce/lemon.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Small, fragrant local lemons from farm groves, in season through the cool months.",
+  "tip": "Heavy lemons are juicier. Unwaxed market lemons are perfect for zesting.",
+  "markets": [
+   "katara",
+   "souq-waqif"
+  ],
+  "organic": false
+ },
+ {
+  "id": "fig",
+  "name": "Figs",
+  "category": "fruits",
+  "image": "/assets/produce/fig.webp",
+  "months": [
+   6,
+   7,
+   8
+  ],
+  "description": "Soft, honeyed figs with a short season — catch them in late summer.",
+  "tip": "Figs don’t ripen after picking, so buy soft ones and eat within two days.",
+  "markets": [
+   "abu-hamour",
+   "umm-salal",
+   "souq-waqif"
+  ],
+  "organic": false
+ },
+ {
+  "id": "watermelon",
+  "name": "Watermelon",
+  "category": "fruits",
+  "image": "/assets/produce/watermelon.webp",
+  "months": [
+   4,
+   5,
+   6
+  ],
+  "description": "Big, cooling melons from the lowland fields, sold whole or by the slice.",
+  "tip": "Tap it — a deep, hollow sound and a creamy yellow ground spot mean it’s ripe.",
+  "markets": [
+   "west-bay",
+   "al-wakrah",
+   "umm-salal"
+  ],
+  "organic": false
+ },
+ {
+  "id": "pear",
+  "name": "Pears",
+  "category": "fruits",
+  "image": "/assets/produce/pear.webp",
+  "months": [
+   8,
+   9,
+   10,
+   11
+  ],
+  "description": "Buttery orchard pears that ripen gently in the fruit bowl.",
+  "tip": "Check the neck: when it yields to gentle pressure, the pear is ready.",
+  "markets": [
+   "abu-hamour",
+   "al-gharrafa",
+   "souq-waqif"
+  ],
+  "organic": true
+ },
+ {
+  "id": "tomato",
+  "name": "Tomatoes",
+  "category": "vegetables",
+  "image": "/assets/produce/tomato.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Local tomatoes from Qatar’s farms and greenhouses — the cool season from November to April is their peak.",
+  "tip": "Never refrigerate ripe tomatoes — it dulls their flavour. Keep stem-side down on the counter.",
+  "markets": [
+   "al-sadd",
+   "west-bay",
+   "al-gharrafa",
+   "al-waab",
+   "souq-waqif",
+   "al-wakrah",
+   "lusail",
+   "al-thumama"
+  ],
+  "organic": true
+ },
+ {
+  "id": "carrot",
+  "name": "Carrots",
+  "category": "vegetables",
+  "image": "/assets/produce/carrot.webp",
+  "months": [
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Sweet bunched carrots in orange, purple and yellow, pulled with their tops on.",
+  "tip": "Twist off the leafy tops once home so the roots stay crisp longer.",
+  "markets": [
+   "west-bay",
+   "al-rayyan",
+   "al-waab",
+   "souq-waqif",
+   "old-airport",
+   "al-thumama"
+  ],
+  "organic": true
+ },
+ {
+  "id": "leafy-greens",
+  "name": "Leafy greens",
+  "category": "vegetables",
+  "image": "/assets/produce/leafy-greens.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Hydroponic spinach, chard and salad leaves grown under glass year-round and cut the morning of market day.",
+  "tip": "Wrap in a damp cloth in the fridge and use within three days.",
+  "markets": [
+   "katara",
+   "al-waab",
+   "al-gharrafa",
+   "west-bay",
+   "madinat-khalifa",
+   "lusail",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "beetroot",
+  "name": "Beetroot",
+  "category": "vegetables",
+  "image": "/assets/produce/beetroot.webp",
+  "months": [
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Earthy roots in deep red, golden and candy-stripe, leaves and all.",
+  "tip": "The leaves cook like chard. Roast the roots whole in foil until tender.",
+  "markets": [
+   "al-rayyan",
+   "al-waab",
+   "west-bay"
+  ],
+  "organic": true
+ },
+ {
+  "id": "pumpkin",
+  "name": "Pumpkins & squash",
+  "category": "vegetables",
+  "image": "/assets/produce/pumpkin.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2
+  ],
+  "description": "Local pumpkins and squash from the winter harvest — roast them or add them to a hearty harees.",
+  "tip": "A hollow knock and a dry, hard stem mean it will keep for months.",
+  "markets": [
+   "al-rayyan",
+   "west-bay",
+   "abu-hamour",
+   "old-airport",
+   "souq-waqif"
+  ],
+  "organic": false
+ },
+ {
+  "id": "sweet-corn",
+  "name": "Sweet corn",
+  "category": "vegetables",
+  "image": "/assets/produce/sweet-corn.webp",
+  "months": [
+   3,
+   4,
+   5,
+   10,
+   11
+  ],
+  "description": "Sugary cobs best eaten on the day they’re picked.",
+  "tip": "Look for green, snug husks and moist, pale silk. Cook the same day.",
+  "markets": [
+   "umm-salal",
+   "west-bay",
+   "al-wakrah"
+  ],
+  "organic": false
+ },
+ {
+  "id": "eggplant",
+  "name": "Aubergine",
+  "category": "vegetables",
+  "image": "/assets/produce/eggplant.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "description": "Glossy aubergines in purple, striped and white varieties.",
+  "tip": "Choose shiny, heavy fruit with a green cap. Skin should spring back when pressed.",
+  "markets": [
+   "al-sadd",
+   "al-gharrafa",
+   "al-wakrah",
+   "al-thumama"
+  ],
+  "organic": false
+ },
+ {
+  "id": "bell-pepper",
+  "name": "Peppers",
+  "category": "vegetables",
+  "image": "/assets/produce/bell-pepper.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Sweet peppers ripening from green to red, yellow and orange.",
+  "tip": "Red peppers are simply fully ripened green ones — sweeter and richer in vitamin C.",
+  "markets": [
+   "west-bay",
+   "al-gharrafa",
+   "al-sadd",
+   "souq-waqif"
+  ],
+  "organic": true
+ },
+ {
+  "id": "radish",
+  "name": "Radishes",
+  "category": "vegetables",
+  "image": "/assets/produce/radish.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Peppery spring and autumn radishes, crisp and quick to grow.",
+  "tip": "Remove leaves before storing. Slice thin with butter and salt on fresh bread.",
+  "markets": [
+   "katara",
+   "al-waab",
+   "old-airport"
+  ],
+  "organic": true
+ },
+ {
+  "id": "cucumber",
+  "name": "Cucumbers",
+  "category": "vegetables",
+  "image": "/assets/produce/cucumber.webp",
+  "months": [
+   10,
+   11,
+   12,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "description": "Crunchy field and glasshouse cucumbers, including small pickling types.",
+  "tip": "Firm, dark green cucumbers without soft ends are the freshest.",
+  "markets": [
+   "katara",
+   "west-bay",
+   "al-sadd",
+   "lusail",
+   "al-thumama"
+  ],
+  "organic": false
+ },
+ {
+  "id": "basil",
+  "name": "Basil",
+  "category": "herbs",
+  "image": "/assets/produce/basil.webp",
+  "months": [
+   10,
+   11,
+   12,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "description": "Sweet Genovese and Thai basil, sold in bunches or as living pots.",
+  "tip": "Keep bunches in a glass of water on the counter — never in the fridge.",
+  "markets": [
+   "katara",
+   "madinat-khalifa",
+   "al-sadd",
+   "souq-waqif",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "mint",
+  "name": "Mint",
+  "category": "herbs",
+  "image": "/assets/produce/mint.webp",
+  "months": [
+   10,
+   11,
+   12,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "description": "Spearmint and peppermint for tea, salads and summer drinks.",
+  "tip": "Plant it in a pot — mint spreads quickly in open beds.",
+  "markets": [
+   "madinat-khalifa",
+   "katara",
+   "al-waab",
+   "al-thumama"
+  ],
+  "organic": true
+ },
+ {
+  "id": "rosemary",
+  "name": "Rosemary",
+  "category": "herbs",
+  "image": "/assets/produce/rosemary.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "A hardy, fragrant herb available all year round.",
+  "tip": "Strip the needles by running fingers down the stem against the grain.",
+  "markets": [
+   "madinat-khalifa",
+   "souq-waqif",
+   "katara",
+   "al-rayyan"
+  ],
+  "organic": false
+ },
+ {
+  "id": "thyme",
+  "name": "Thyme",
+  "category": "herbs",
+  "image": "/assets/produce/thyme.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Tiny-leaved, woody herb for roasts, stews and roasted vegetables.",
+  "tip": "Dried thyme keeps its flavour well — hang a bunch upside down to dry.",
+  "markets": [
+   "madinat-khalifa",
+   "al-waab",
+   "katara"
+  ],
+  "organic": true
+ },
+ {
+  "id": "parsley",
+  "name": "Parsley",
+  "category": "herbs",
+  "image": "/assets/produce/parsley.webp",
+  "months": [
+   10,
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Flat-leaf and curly parsley, bright and grassy.",
+  "tip": "Chop the stems too — they carry most of the flavour.",
+  "markets": [
+   "katara",
+   "west-bay",
+   "al-gharrafa",
+   "souq-waqif"
+  ],
+  "organic": true
+ },
+ {
+  "id": "chives",
+  "name": "Chives",
+  "category": "herbs",
+  "image": "/assets/produce/chives.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Mild, oniony herb with edible purple flowers in early summer.",
+  "tip": "Snip with scissors straight over eggs or potatoes.",
+  "markets": [
+   "madinat-khalifa",
+   "katara",
+   "old-airport"
+  ],
+  "organic": false
+ },
+ {
+  "id": "cheese",
+  "name": "Farmhouse cheese",
+  "category": "dairy",
+  "image": "/assets/produce/cheese.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Aged and fresh cheeses from small local dairies, made on the farm.",
+  "tip": "Wrap cheese in waxed or baking paper rather than cling film so it can breathe.",
+  "markets": [
+   "madinat-khalifa",
+   "al-gharrafa",
+   "souq-waqif",
+   "west-bay",
+   "the-pearl"
+  ],
+  "organic": false
+ },
+ {
+  "id": "milk",
+  "name": "Bottled milk",
+  "category": "dairy",
+  "image": "/assets/produce/milk.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Whole, non-homogenised milk in returnable glass bottles.",
+  "tip": "Return the glass bottle next visit — most dairies give a deposit back.",
+  "markets": [
+   "madinat-khalifa",
+   "al-gharrafa",
+   "souq-waqif",
+   "al-thumama"
+  ],
+  "organic": true
+ },
+ {
+  "id": "eggs",
+  "name": "Free-range eggs",
+  "category": "dairy",
+  "image": "/assets/produce/eggs.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Eggs from pasture-roaming hens, with rich orange yolks.",
+  "tip": "Farm eggs keep well for weeks unwashed. Store pointy end down.",
+  "markets": [
+   "al-waab",
+   "old-airport",
+   "madinat-khalifa",
+   "al-rayyan",
+   "souq-waqif",
+   "lusail",
+   "al-thumama"
+  ],
+  "organic": true
+ },
+ {
+  "id": "yogurt",
+  "name": "Farm yogurt",
+  "category": "dairy",
+  "image": "/assets/produce/yogurt.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Thick, tangy yogurt cultured in small batches.",
+  "tip": "Swirl in fresh berries and a spoon of local honey.",
+  "markets": [
+   "madinat-khalifa",
+   "al-gharrafa"
+  ],
+  "organic": true
+ },
+ {
+  "id": "honey",
+  "name": "Raw honey",
+  "category": "other",
+  "image": "/assets/produce/honey.webp",
+  "months": [
+   5,
+   6,
+   10,
+   11,
+   12
+  ],
+  "description": "Unfiltered honey from hives in the orchards and wildflower meadows.",
+  "tip": "Crystallised honey is still perfect — warm the jar gently in water to soften it.",
+  "markets": [
+   "al-waab",
+   "souq-waqif",
+   "abu-hamour",
+   "al-wakrah",
+   "lusail",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "sourdough",
+  "name": "Sourdough bread",
+  "category": "other",
+  "image": "/assets/produce/sourdough.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Slow-fermented loaves from market bakers, baked before dawn.",
+  "tip": "Store cut-side down on a board; revive a day-old loaf in a hot oven for five minutes.",
+  "markets": [
+   "al-sadd",
+   "west-bay",
+   "souq-waqif",
+   "old-airport",
+   "lusail",
+   "the-pearl"
+  ],
+  "organic": false
+ },
+ {
+  "id": "mushrooms",
+  "name": "Mushrooms",
+  "category": "other",
+  "image": "/assets/produce/mushrooms.webp",
+  "months": [
+   10,
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Oyster, shiitake and chestnut mushrooms from local growers.",
+  "tip": "Keep in a paper bag in the fridge; brush clean rather than washing.",
+  "markets": [
+   "al-rayyan",
+   "souq-waqif",
+   "al-wakrah"
+  ],
+  "organic": true
+ },
+ {
+  "id": "sunflowers",
+  "name": "Sunflowers",
+  "category": "other",
+  "image": "/assets/produce/sunflowers.webp",
+  "months": [
+   2,
+   3,
+   4
+  ],
+  "description": "Armfuls of cut sunflowers for the kitchen table.",
+  "tip": "Cut the stems at an angle and change the water every two days.",
+  "markets": [
+   "west-bay",
+   "al-sadd",
+   "katara",
+   "lusail"
+  ],
+  "organic": false
+ },
+ {
+  "id": "lavender",
+  "name": "Lavender",
+  "category": "other",
+  "image": "/assets/produce/lavender.webp",
+  "months": [
+   2,
+   3,
+   4
+  ],
+  "description": "Fragrant bunches for drying, baking and sachets.",
+  "tip": "Hang bunches upside down somewhere dry for two weeks.",
+  "markets": [
+   "katara",
+   "madinat-khalifa",
+   "al-waab"
+  ],
+  "organic": true
+ },
+ {
+  "id": "microgreens",
+  "name": "Microgreens",
+  "category": "other",
+  "image": "/assets/produce/microgreens.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Tiny seedling greens — pea shoots, radish and sunflower sprouts — grown year-round under glass.",
+  "tip": "Snip just before serving. Keep the tray on a sunny windowsill and water lightly.",
+  "markets": [
+   "katara",
+   "souq-waqif",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "dates",
+  "name": "Khalas dates",
+  "category": "fruits",
+  "image": "/assets/produce/dates.webp",
+  "months": [
+   6,
+   7,
+   8,
+   9
+  ],
+  "description": "Qatar’s favourite date: caramel-sweet Khalas, sold fresh on the branch in late summer and dried all year.",
+  "tip": "Fresh rutab dates are soft and half-golden; keep them in the fridge and eat within a week.",
+  "markets": [
+   "abu-hamour",
+   "souq-waqif",
+   "umm-salal",
+   "al-wakrah",
+   "west-bay"
+  ],
+  "organic": false
+ },
+ {
+  "id": "pomegranate",
+  "name": "Pomegranates",
+  "category": "fruits",
+  "image": "/assets/produce/pomegranate.webp",
+  "months": [
+   9,
+   10,
+   11
+  ],
+  "description": "Jewel-red regional pomegranates that arrive as the heat breaks in autumn.",
+  "tip": "Choose heavy fruit with taut skin; roll it on the counter before cutting to loosen the seeds.",
+  "markets": [
+   "abu-hamour",
+   "souq-waqif",
+   "al-gharrafa"
+  ],
+  "organic": false
+ },
+ {
+  "id": "mango",
+  "name": "Mangoes",
+  "category": "fruits",
+  "image": "/assets/produce/mango.webp",
+  "months": [
+   4,
+   5,
+   6,
+   7
+  ],
+  "description": "Juicy regional mangoes, at their sweetest from late spring into summer.",
+  "tip": "Ripe mangoes smell sweet at the stem and give slightly when pressed.",
+  "markets": [
+   "abu-hamour",
+   "souq-waqif",
+   "al-wakrah",
+   "lusail"
+  ],
+  "organic": false
+ },
+ {
+  "id": "grapes",
+  "name": "Grapes",
+  "category": "fruits",
+  "image": "/assets/produce/grapes.webp",
+  "months": [
+   6,
+   7,
+   8
+  ],
+  "description": "Red and green table grapes from regional vineyards, a summer staple at fruit stalls.",
+  "tip": "Look for plump grapes firmly attached to green stems; rinse only before eating.",
+  "markets": [
+   "abu-hamour",
+   "souq-waqif",
+   "al-sadd"
+  ],
+  "organic": false
+ },
+ {
+  "id": "oranges",
+  "name": "Oranges",
+  "category": "fruits",
+  "image": "/assets/produce/oranges.webp",
+  "months": [
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Winter citrus for juicing and snacking, brought in from regional groves when local lemons ripen.",
+  "tip": "Heavier oranges hold more juice. They keep for a week at room temperature.",
+  "markets": [
+   "abu-hamour",
+   "souq-waqif",
+   "old-airport",
+   "al-sadd"
+  ],
+  "organic": false
+ },
+ {
+  "id": "guava",
+  "name": "Guava",
+  "category": "fruits",
+  "image": "/assets/produce/guava.webp",
+  "months": [
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Fragrant pink-fleshed guava, lovely fresh or blended into juice.",
+  "tip": "Ripe guava smells perfumed and yields a little; eat the skin too.",
+  "markets": [
+   "abu-hamour",
+   "al-wakrah",
+   "souq-waqif"
+  ],
+  "organic": false
+ },
+ {
+  "id": "mulberries",
+  "name": "Mulberries",
+  "category": "fruits",
+  "image": "/assets/produce/mulberries.webp",
+  "months": [
+   3,
+   4
+  ],
+  "description": "A short spring treat from farm trees — soft, dark and very sweet.",
+  "tip": "They stain easily and keep only a day or two; buy them for eating the same day.",
+  "markets": [
+   "umm-salal",
+   "al-rayyan",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "melon",
+  "name": "Sweet melon",
+  "category": "fruits",
+  "image": "/assets/produce/melon.webp",
+  "months": [
+   4,
+   5,
+   6
+  ],
+  "description": "Fragrant local melons from the spring harvest, before the summer heat.",
+  "tip": "A ripe melon smells sweet at the blossom end and feels heavy for its size.",
+  "markets": [
+   "umm-salal",
+   "abu-hamour",
+   "al-wakrah",
+   "lusail"
+  ],
+  "organic": false
+ },
+ {
+  "id": "okra",
+  "name": "Okra",
+  "category": "vegetables",
+  "image": "/assets/produce/okra.webp",
+  "months": [
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10
+  ],
+  "description": "A heat-loving local crop that keeps farms productive through summer — perfect for bamia stew.",
+  "tip": "Pick small, bright pods that snap cleanly; large pods turn woody.",
+  "markets": [
+   "umm-salal",
+   "souq-waqif",
+   "al-sadd",
+   "al-thumama"
+  ],
+  "organic": false
+ },
+ {
+  "id": "zucchini",
+  "name": "Zucchini",
+  "category": "vegetables",
+  "image": "/assets/produce/zucchini.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Tender local courgettes, often sold with their flowers still attached in winter.",
+  "tip": "Smaller zucchini have the best flavour; store unwashed in the fridge.",
+  "markets": [
+   "al-gharrafa",
+   "umm-salal",
+   "west-bay",
+   "al-waab"
+  ],
+  "organic": true
+ },
+ {
+  "id": "cauliflower",
+  "name": "Cauliflower",
+  "category": "vegetables",
+  "image": "/assets/produce/cauliflower.webp",
+  "months": [
+   12,
+   1,
+   2
+  ],
+  "description": "Creamy-white winter heads from the northern farms, great roasted with spices.",
+  "tip": "Choose heads with tight florets and fresh green leaves wrapped around them.",
+  "markets": [
+   "umm-salal",
+   "al-rayyan",
+   "old-airport"
+  ],
+  "organic": false
+ },
+ {
+  "id": "cabbage",
+  "name": "Cabbage",
+  "category": "vegetables",
+  "image": "/assets/produce/cabbage.webp",
+  "months": [
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Crisp green winter cabbage for salads, stuffed-cabbage rolls and soups.",
+  "tip": "A good cabbage feels heavy and squeaks when you squeeze it.",
+  "markets": [
+   "umm-salal",
+   "al-rayyan",
+   "al-sadd",
+   "souq-waqif"
+  ],
+  "organic": false
+ },
+ {
+  "id": "potatoes",
+  "name": "Potatoes",
+  "category": "vegetables",
+  "image": "/assets/produce/potatoes.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "New-season local potatoes with thin skins, dug in late winter and spring.",
+  "tip": "Keep them somewhere cool and dark, away from onions.",
+  "markets": [
+   "umm-salal",
+   "old-airport",
+   "al-thumama",
+   "souq-waqif"
+  ],
+  "organic": false
+ },
+ {
+  "id": "onions",
+  "name": "Onions",
+  "category": "vegetables",
+  "image": "/assets/produce/onions.webp",
+  "months": [
+   2,
+   3,
+   4
+  ],
+  "description": "Brown and red onions from the spring harvest, sweeter than stored ones.",
+  "tip": "Store in a dry, airy basket; they last for weeks.",
+  "markets": [
+   "umm-salal",
+   "souq-waqif",
+   "al-rayyan"
+  ],
+  "organic": false
+ },
+ {
+  "id": "green-beans",
+  "name": "Green beans",
+  "category": "vegetables",
+  "image": "/assets/produce/green-beans.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Slim, snappy beans from the cool-season farms.",
+  "tip": "Fresh beans snap cleanly in half; cook them quickly to keep the colour.",
+  "markets": [
+   "al-gharrafa",
+   "west-bay",
+   "al-waab"
+  ],
+  "organic": true
+ },
+ {
+  "id": "lettuce",
+  "name": "Romaine lettuce",
+  "category": "vegetables",
+  "image": "/assets/produce/lettuce.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Crunchy romaine hearts from field and greenhouse — the base of a good fattoush.",
+  "tip": "Wrap in a damp towel in the fridge to keep the leaves crisp.",
+  "markets": [
+   "katara",
+   "al-waab",
+   "west-bay",
+   "al-gharrafa"
+  ],
+  "organic": true
+ },
+ {
+  "id": "chili",
+  "name": "Chilli peppers",
+  "category": "vegetables",
+  "image": "/assets/produce/chili.webp",
+  "months": [
+   10,
+   11,
+   12,
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "description": "Green and red chillies from local greenhouses, from mild to fiery.",
+  "tip": "The smaller and redder, the hotter. They freeze well whole.",
+  "markets": [
+   "souq-waqif",
+   "al-sadd",
+   "al-wakrah"
+  ],
+  "organic": false
+ },
+ {
+  "id": "sweet-potato",
+  "name": "Sweet potatoes",
+  "category": "vegetables",
+  "image": "/assets/produce/sweet-potato.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2
+  ],
+  "description": "Orange-fleshed sweet potatoes from the winter harvest, lovely roasted.",
+  "tip": "Keep them at room temperature — the fridge spoils their texture.",
+  "markets": [
+   "umm-salal",
+   "al-rayyan",
+   "lusail"
+  ],
+  "organic": false
+ },
+ {
+  "id": "coriander",
+  "name": "Coriander",
+  "category": "herbs",
+  "image": "/assets/produce/coriander.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Fragrant fresh coriander, a must for salsas, soups and machboos.",
+  "tip": "Stand the bunch in a glass of water in the fridge, loosely covered.",
+  "markets": [
+   "katara",
+   "al-waab",
+   "souq-waqif",
+   "al-gharrafa"
+  ],
+  "organic": true
+ },
+ {
+  "id": "dill",
+  "name": "Dill",
+  "category": "herbs",
+  "image": "/assets/produce/dill.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3
+  ],
+  "description": "Feathery dill from the cool season, perfect with fish, rice and yoghurt.",
+  "tip": "Use it quickly — dill wilts faster than most herbs.",
+  "markets": [
+   "katara",
+   "al-waab",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "jarjeer",
+  "name": "Jarjeer (rocket)",
+  "category": "herbs",
+  "image": "/assets/produce/jarjeer.webp",
+  "months": [
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Peppery local rocket, eaten fresh alongside grilled dishes.",
+  "tip": "Young, small leaves are the mildest; larger leaves pack more pepper.",
+  "markets": [
+   "katara",
+   "al-waab",
+   "west-bay",
+   "madinat-khalifa"
+  ],
+  "organic": true
+ },
+ {
+  "id": "purslane",
+  "name": "Purslane (baqla)",
+  "category": "herbs",
+  "image": "/assets/produce/purslane.webp",
+  "months": [
+   10,
+   11,
+   12,
+   1,
+   2,
+   3,
+   4
+  ],
+  "description": "Juicy, lemony succulent leaves loved in fattoush and simple salads.",
+  "tip": "Choose bunches with thick stems and glossy leaves; rinse well.",
+  "markets": [
+   "al-rayyan",
+   "souq-waqif",
+   "madinat-khalifa"
+  ],
+  "organic": true
+ },
+ {
+  "id": "labneh",
+  "name": "Labneh",
+  "category": "dairy",
+  "image": "/assets/produce/labneh.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Thick strained yoghurt from local dairies, drizzled with olive oil for breakfast.",
+  "tip": "Keep chilled and use a clean spoon; it lasts about a week once opened.",
+  "markets": [
+   "madinat-khalifa",
+   "souq-waqif",
+   "al-waab",
+   "the-pearl"
+  ],
+  "organic": true
+ },
+ {
+  "id": "camel-milk",
+  "name": "Camel milk",
+  "category": "dairy",
+  "image": "/assets/produce/camel-milk.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Fresh camel milk from local farms — slightly salty, light and traditional.",
+  "tip": "Buy it chilled and drink within a few days; it also makes a good laban.",
+  "markets": [
+   "madinat-khalifa",
+   "souq-waqif",
+   "umm-salal"
+  ],
+  "organic": false
+ },
+ {
+  "id": "laban",
+  "name": "Laban",
+  "category": "dairy",
+  "image": "/assets/produce/laban.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Cool, tangy cultured milk — the classic drink for hot days.",
+  "tip": "Shake well and serve very cold, with a pinch of dried mint.",
+  "markets": [
+   "madinat-khalifa",
+   "souq-waqif",
+   "al-sadd",
+   "al-thumama"
+  ],
+  "organic": true
+ },
+ {
+  "id": "akkawi",
+  "name": "Akkawi cheese",
+  "category": "dairy",
+  "image": "/assets/produce/akkawi.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "A mild white brined cheese made by local dairies, great with bread and watermelon.",
+  "tip": "Soak slices in water for an hour to soften the saltiness.",
+  "markets": [
+   "madinat-khalifa",
+   "souq-waqif",
+   "the-pearl"
+  ],
+  "organic": false
+ },
+ {
+  "id": "loomi",
+  "name": "Loomi (dried lime)",
+  "category": "other",
+  "image": "/assets/produce/loomi.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Sun-dried limes that give machboos and stews their deep, tangy flavour.",
+  "tip": "Pierce the lime before adding it to the pot, or grind it into a powder.",
+  "markets": [
+   "souq-waqif",
+   "abu-hamour",
+   "al-wakrah"
+  ],
+  "organic": false
+ },
+ {
+  "id": "regag",
+  "name": "Regag bread",
+  "category": "other",
+  "image": "/assets/produce/regag.webp",
+  "months": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8,
+   9,
+   10,
+   11,
+   12
+  ],
+  "description": "Paper-thin Qatari bread baked on a hot dome, often with egg or cheese.",
+  "tip": "Eat it warm from the griddle — it turns crisp within minutes.",
+  "markets": [
+   "souq-waqif",
+   "al-wakrah",
+   "old-airport",
+   "lusail"
+  ],
+  "organic": false
+ },
+ {
+  "id": "date-syrup",
+  "name": "Date syrup (dibs)",
+  "category": "other",
+  "image": "/assets/produce/date-syrup.webp",
+  "months": [
+   8,
+   9,
+   10,
+   11,
+   12,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7
+  ],
+  "description": "Rich syrup pressed from local dates, stirred into tea or drizzled on bread.",
+  "tip": "Keep in the cupboard; it thickens when cool, so warm the jar in hot water.",
+  "markets": [
+   "souq-waqif",
+   "abu-hamour",
+   "al-waab"
+  ],
+  "organic": true
+ }
+]

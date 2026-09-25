@@ -1,0 +1,355 @@
+{
+  "botName": "FreshBot",
+  "greeting": "Hi, I’m FreshBot 🌱 I can help you find a market, check what’s open, or tell you what’s in season. Ask away, or tap a suggestion.",
+  "fallback": "I’m not sure about that one — I only know about Qatar’s farmers markets, produce and how FreshFind works. Try asking “what’s open today?” or “where can I buy dates?”.",
+  "quickReplies": [
+    "Find a market near me",
+    "What markets are open today?",
+    "What’s in season?",
+    "Where can I buy dates?",
+    "Show organic produce",
+    "How do bookmarks work?"
+  ],
+  "intents": [
+    {
+      "id": "greeting",
+      "keywords": [
+        "hello",
+        "hi",
+        "hey",
+        "good morning",
+        "good afternoon"
+      ],
+      "answer": "Hello! 🌻 What are you shopping for today — a market, a particular fruit or vegetable, or something that’s in season?"
+    },
+    {
+      "id": "thanks",
+      "keywords": [
+        "thanks",
+        "thank you",
+        "cheers",
+        "great",
+        "perfect"
+      ],
+      "answer": "You’re welcome — enjoy the market! 🧺"
+    },
+    {
+      "id": "open_now",
+      "keywords": [
+        "open now",
+        "open today",
+        "open right now",
+        "currently open",
+        "today",
+        "tonight",
+        "right now",
+        "which markets are open"
+      ],
+      "handler": "openToday"
+    },
+    {
+      "id": "near_me",
+      "keywords": [
+        "near me",
+        "nearby",
+        "closest",
+        "nearest",
+        "close to me",
+        "around me",
+        "my location"
+      ],
+      "handler": "nearMe"
+    },
+    {
+      "id": "season",
+      "keywords": [
+        "in season",
+        "season",
+        "seasonal",
+        "this month",
+        "this week",
+        "fresh now",
+        "what's fresh"
+      ],
+      "handler": "inSeason"
+    },
+    {
+      "id": "organic",
+      "keywords": [
+        "organic",
+        "pesticide",
+        "certified"
+      ],
+      "handler": "organic"
+    },
+    {
+      "id": "category",
+      "keywords": [
+        "vegetables",
+        "vegetable",
+        "veg",
+        "fruits",
+        "fruit",
+        "herbs",
+        "herb",
+        "dairy",
+        "cheese shop",
+        "flowers",
+        "bread"
+      ],
+      "handler": "category"
+    },
+    {
+      "id": "weekend",
+      "keywords": [
+        "weekend",
+        "saturday",
+        "sunday",
+        "monday",
+        "tuesday",
+        "wednesday",
+        "thursday",
+        "friday"
+      ],
+      "handler": "byDay"
+    },
+    {
+      "id": "evening",
+      "keywords": [
+        "evening",
+        "night",
+        "after work",
+        "late"
+      ],
+      "answer": "For evening shopping try Al Wakrah Harbour Night Market (Thursday–Saturday, 17:00–22:00), Lusail Boulevard Market on Friday and Saturday evenings, or Al Thumama Evening Market on Tuesdays and Thursdays.",
+      "links": [
+        {
+          "label": "Al Wakrah Harbour Night Market",
+          "to": "#/markets/al-wakrah"
+        },
+        {
+          "label": "Lusail Boulevard Market",
+          "to": "#/markets/lusail"
+        }
+      ]
+    },
+    {
+      "id": "bookmarks",
+      "keywords": [
+        "bookmark",
+        "save",
+        "saved",
+        "favourite",
+        "favorite",
+        "heart"
+      ],
+      "answer": "Tap the heart on any market or produce page to save it. Your saved list lives in this browser, and you can add a note to each item (notes last until you close the tab), export the list as text, or share it.",
+      "links": [
+        {
+          "label": "Open my saved list",
+          "to": "#/saved"
+        }
+      ]
+    },
+    {
+      "id": "notes",
+      "keywords": [
+        "note",
+        "notes"
+      ],
+      "answer": "Once something is saved, open Saved and type in the note box under it — for example “buy 2kg for jam”. Notes are session-only, so they clear when you close the tab.",
+      "links": [
+        {
+          "label": "Open Saved",
+          "to": "#/saved"
+        }
+      ]
+    },
+    {
+      "id": "export",
+      "keywords": [
+        "export",
+        "download",
+        "print",
+        "list"
+      ],
+      "answer": "In Saved, choose “Export list” to download a tidy text file of everything you’ve saved, including your notes — or copy it to the clipboard.",
+      "links": [
+        {
+          "label": "Open Saved",
+          "to": "#/saved"
+        }
+      ]
+    },
+    {
+      "id": "share",
+      "keywords": [
+        "share",
+        "send",
+        "whatsapp",
+        "friend"
+      ],
+      "answer": "Every market and produce page has a Share button. On phones it opens your share sheet; elsewhere you can copy the link or share to WhatsApp, X, Facebook or email."
+    },
+    {
+      "id": "timings",
+      "keywords": [
+        "timing",
+        "timings",
+        "hours",
+        "opening",
+        "when",
+        "schedule",
+        "close",
+        "closing"
+      ],
+      "answer": "Each market page has a weekly schedule table with opening hours, and the tag on every market tells you if it’s open right now or when it next opens.",
+      "links": [
+        {
+          "label": "Browse the market directory",
+          "to": "#/markets"
+        }
+      ]
+    },
+    {
+      "id": "directions",
+      "keywords": [
+        "directions",
+        "map",
+        "address",
+        "how do i get",
+        "parking",
+        "where is"
+      ],
+      "answer": "Open any market to see its full address and a map, with a “Get directions” link that opens in Google Maps.",
+      "links": [
+        {
+          "label": "Market directory",
+          "to": "#/markets"
+        }
+      ]
+    },
+    {
+      "id": "payment",
+      "keywords": [
+        "card",
+        "cash",
+        "pay",
+        "payment",
+        "price",
+        "cost",
+        "buy online",
+        "order",
+        "delivery"
+      ],
+      "answer": "FreshFind is a guide, not a shop — you buy directly from growers at the market. Most stalls take cards, but bringing some cash helps at smaller stalls."
+    },
+    {
+      "id": "account",
+      "keywords": [
+        "login",
+        "log in",
+        "sign up",
+        "signup",
+        "account",
+        "register",
+        "password"
+      ],
+      "answer": "Accounts aren’t available yet — the Log in and Sign up buttons are placeholders. You don’t need an account: bookmarks are saved in your browser."
+    },
+    {
+      "id": "contact",
+      "keywords": [
+        "contact",
+        "email",
+        "phone",
+        "feedback",
+        "suggest",
+        "add my market",
+        "farmer",
+        "grower"
+      ],
+      "answer": "You can reach the FreshFind team by email or phone — details are on the Contact page. Growers who’d like their market listed are very welcome to get in touch.",
+      "links": [
+        {
+          "label": "Contact us",
+          "to": "#/contact"
+        }
+      ]
+    },
+    {
+      "id": "about",
+      "keywords": [
+        "about",
+        "who made",
+        "who are you",
+        "what is freshfind",
+        "mission"
+      ],
+      "answer": "FreshFind brings farmers markets across Doha and Qatar into one friendly guide, so it’s easy to shop local and seasonal.",
+      "links": [
+        {
+          "label": "About FreshFind",
+          "to": "#/about"
+        }
+      ]
+    },
+    {
+      "id": "ai",
+      "keywords": [
+        "are you ai",
+        "are you a bot",
+        "chatgpt",
+        "robot",
+        "human"
+      ],
+      "answer": "I’m a simple rule-based helper: I match your words against a set of prepared answers and FreshFind’s market data. No live AI service is involved."
+    },
+    {
+      "id": "kids",
+      "keywords": [
+        "kids",
+        "children",
+        "family",
+        "dog",
+        "pets",
+        "stroller"
+      ],
+      "answer": "Families are welcome everywhere! Al Rayyan Farmers Yard has a children’s planting table, Old Airport Neighbourhood Market runs Saturday story time, and Lusail Boulevard and Corniche Garden Market are pushchair-friendly.",
+      "links": [
+        {
+          "label": "Al Rayyan Farmers Yard",
+          "to": "#/markets/al-rayyan"
+        },
+        {
+          "label": "Old Airport Neighbourhood Market",
+          "to": "#/markets/old-airport"
+        }
+      ]
+    },
+    {
+      "id": "indoor",
+      "keywords": [
+        "indoor",
+        "covered",
+        "air conditioned",
+        "air-conditioned",
+        "cool",
+        "summer",
+        "hot",
+        "heat"
+      ],
+      "answer": "Two markets trade indoors in cooled halls, which makes them the go-to choice in summer: Souq Waqif Market Hall (every day) and Katara Greenhouse Market (Tuesday–Friday).",
+      "links": [
+        {
+          "label": "Souq Waqif Market Hall",
+          "to": "#/markets/souq-waqif"
+        },
+        {
+          "label": "Katara Greenhouse Market",
+          "to": "#/markets/katara"
+        }
+      ]
+    }
+  ]
+}

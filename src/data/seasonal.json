@@ -1,0 +1,58 @@
+{
+  "hemisphere": "north",
+  "seasons": [
+    {
+      "id": "spring",
+      "name": "Spring",
+      "months": [
+        3,
+        4,
+        5
+      ],
+      "colour": "#8fb35a",
+      "headline": "Melons, mulberries and the last cool-season crops",
+      "blurb": "Local farms bring in their final tomatoes, peppers and greens while melons and mulberries ripen. Outdoor markets are at their busiest before the heat arrives.",
+      "tip": "Buy herbs as living pots now — kept out of the midday sun they crop for weeks."
+    },
+    {
+      "id": "summer",
+      "name": "Summer",
+      "months": [
+        6,
+        7,
+        8
+      ],
+      "colour": "#e0832a",
+      "headline": "Khalas dates, figs and greens grown under glass",
+      "blurb": "It’s too hot for most field crops, so fresh dates, figs and okra lead the stalls, with hydroponic leaves from greenhouse growers. Many outdoor markets move to evenings.",
+      "tip": "Shop early or in the evening, and bring a cool bag — or head to the air-cooled halls."
+    },
+    {
+      "id": "autumn",
+      "name": "Autumn",
+      "months": [
+        9,
+        10,
+        11
+      ],
+      "colour": "#c8612b",
+      "headline": "Planting time, pomegranates and the first local greens",
+      "blurb": "As the heat breaks, farms replant and the first local leaves, herbs and chillies appear alongside pomegranates, guava and regional orchard fruit.",
+      "tip": "Ask growers what they have just planted — it tells you what will be on the stalls in winter."
+    },
+    {
+      "id": "winter",
+      "name": "Winter",
+      "months": [
+        12,
+        1,
+        2
+      ],
+      "colour": "#5b7f8f",
+      "headline": "The peak of Qatar’s growing season",
+      "blurb": "The cool months are harvest time: local tomatoes, strawberries, cauliflower, carrots and cabbage, with outdoor markets open at their fullest.",
+      "tip": "Weekend mornings are the best time to shop — go early for strawberries and fresh herbs."
+    }
+  ],
+  "region": "Qatar"
+}
