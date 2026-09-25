@@ -47,6 +47,9 @@ export default function App() {
   const [searchOpen, setSearchOpen] = useState(false)
   const [auth, setAuth] = useState(null)
   const [basketOpen, setBasketOpen] = useState(false)
+  const closeBasket = useCallback(() => {
+    setBasketOpen(false)
+  }, [])
   const [worldMode, setWorldMode] = useState('globe')
   const [entered, setEntered] = useState(() => route.section !== 'home')
   const [leaving, setLeaving] = useState(false)
@@ -315,7 +318,10 @@ const marketChips = chipPriority
       <SearchOverlay open={searchOpen} onClose={() => setSearchOpen(false)} />
       <Chatbot />
       <AuthDialog mode={auth} onClose={() => setAuth(null)} onSwitch={setAuth} />
-      <BasketPanel open={basketOpen} onClose={() => setBasketOpen(false)} />
+      <BasketPanel
+        open={basketOpen}
+        onClose={closeBasket}
+      />
       <Toasts items={toasts} dismiss={dismiss} />
     </AppCtx.Provider>
   )

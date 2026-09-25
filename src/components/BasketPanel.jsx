@@ -13,13 +13,20 @@ export default function BasketPanel({ open, onClose }) {
   const [form, setForm] = useState({ name: '', phone: '', email: '', address: '' })
 
   useEffect(() => {
-    if (!open) return
-    setStep('basket')
-    setOrderNo('')
-    const esc = (e) => { if (e.key === 'Escape') onClose() }
-    window.addEventListener('keydown', esc)
-    return () => window.removeEventListener('keydown', esc)
-  }, [open, onClose])
+  if (!open) return
+  setStep('basket')
+  setOrderNo('')
+}, [open])
+useEffect(() => {
+  if (!open) return
+  const esc = (e) => {
+    if (e.key === 'Escape') onClose()
+  }
+  window.addEventListener('keydown', esc)
+  return () => {
+    window.removeEventListener('keydown', esc)
+  }
+}, [open, onClose])
 
   const marketCount = useMemo(() => new Set(basket.detailed.map((x) => x.marketId)).size, [basket.detailed])
   if (!open) return null
