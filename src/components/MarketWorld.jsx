@@ -61,8 +61,20 @@ function measure(count, globeCount = count) {
   const vw = window.innerWidth
   const vh = window.innerHeight
   const mobile = vw < 720
-  const tileW = mobile ? Math.round(clamp(vw * 0.4, 128, 168)) : Math.round(clamp(Math.min(vw * 0.12, vh * 0.235), 140, 196))
-  const tileH = Math.round(tileW * 1.22)
+  const phone = vw < 520
+  const tileW = phone
+    ? Math.round(clamp(vw * 0.31, 108, 128))
+    : mobile
+      ? Math.round(clamp(vw * 0.36, 120, 150))
+      : Math.round(
+          clamp(
+            Math.min(vw * 0.12, vh * 0.235),
+            140,
+            196
+          )
+        )
+
+const tileH = Math.round(tileW * 1.22)
 
   // Keep the current globe sizing, but let the unfolded archive use the
   // fuller multi-row geometry from the earlier version.
@@ -82,8 +94,8 @@ function measure(count, globeCount = count) {
     : wide ? Math.max(150, Math.min(vw * 0.205, avail * 0.43, fitR))
     : Math.min(vw * 0.26, avail * 0.46)
 
-const cellW = tileW * 1.11
-const cellH = tileH * 1.10
+const cellW = tileW * (phone ? 1.07 : 1.11)
+const cellH = tileH * (phone ? 1.06 : 1.10)
 const cardsAcross = Math.max(
   1,
   Math.ceil(vw / cellW) + 1
