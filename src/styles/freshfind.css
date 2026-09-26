@@ -58,20 +58,30 @@
 html, body, #root {
   margin: 0;
   width: 100%;
-  max-width: 100%;
+  min-width: 100%;
   height: 100%;
-  overflow-x: hidden;
+  min-height: 100%;
+  background: var(--paper);
 }
-#root { position: relative; overflow: hidden; }
+@supports (height: 100dvh) {
+  html, body, #root { min-height: 100dvh; }
+}
 body {
   font-family: var(--body);
   font-size: 16px;
   line-height: 1.55;
   color: var(--ink);
-  background: #e9ecd7;
+  background: var(--paper);
   -webkit-font-smoothing: antialiased;
   overflow: hidden;
+  overflow-x: hidden;
   overscroll-behavior: none;
+}
+#root, .app {
+  width: 100%;
+  max-width: 100%;
+  min-height: var(--vh);
+  overflow-x: hidden;
 }
 img { max-width: 100%; display: block; }
 button, input, select, textarea { font: inherit; color: inherit; }
@@ -262,7 +272,7 @@ html:not(.env-ready) .env__plate--market { animation-play-state: paused; }
 .app--intro .edge-foot p { display: none; }
 
 /* ------------------------------------------------------------------- intro */
-.intro { position: fixed; inset: 0; z-index: 4; width: 100%; max-width: 100%; overflow-x: hidden; }
+.intro { position: fixed; inset: 0; z-index: 4; }
 /* The sign layer has the plate's exact box and transform (incl. parallax), so the
    title stays painted on the wooden sign through every zoom. */
 .intro__sign-layer {
@@ -362,7 +372,7 @@ html:not(.env-ready) .intro__panel, html:not(.env-ready) .intro__showcase { anim
 
 /* ------------------------------------------------------------------- world */
 .world-wrap {
-  position: fixed; inset: 0; z-index: 2; width: 100%; max-width: 100%;
+  position: fixed; inset: 0; z-index: 2;
   transition: opacity 0.8s var(--ease), transform var(--scene-dur) var(--ease), filter 0.6s, visibility 0s;
   animation: world-in var(--scene-dur) var(--ease) backwards 0.05s;
 }
@@ -1026,22 +1036,7 @@ html.has-cursor .cursor { display: block; }
   .globe-ui__explore.btn--lg { min-height: 50px; padding: 12px 22px; font-size: 16px; }
   .orbit-tags li { left: calc(cos(var(--a)) * var(--globe-r, 150px) * 1.12); top: calc(sin(var(--a)) * var(--globe-r, 150px) * 1.28); }
   .orbit-tags button { font-size: 17px; padding: 6px 10px 5px; }
-  .archive-ui__sign {
-    top: calc(var(--top) + 2px);
-    left: 10px;
-    right: 10px;
-    width: auto;
-    max-width: none;
-    margin: 0;
-    translate: 0 0;
-    transform: none;
-    padding: 10px 12px;
-    box-sizing: border-box;
-  }
-  .archive-ui__search { width: 100%; max-width: 100%; }
-  .archive-ui__row { width: 100%; }
-  .archive-ui__row .archive-ui__search { min-width: 0; flex: 1 1 100%; }
-  .archive-ui__controls { width: 100%; min-width: 0; }
+  .archive-ui__sign { padding: 10px 12px; top: calc(var(--top) + 2px); }
   .archive-ui__head img, .archive-ui__head p { display: none; }
   .archive-ui__head { margin-bottom: 6px; }
   .archive-ui__row .sort span { display: none; }
@@ -1055,36 +1050,33 @@ html.has-cursor .cursor { display: block; }
   .archive-ui__bottom .btn { flex: 1 1 0; min-width: 0; padding: 10px 12px; font-size: 14px; }
   .archive-ui__hint { display: none; }
   .globe-preview { display: none; }
-
-  /* Compact/readable archive cards for the entire mobile layout. */
-  .tile { border-radius: 13px; }
-  .tile__info { height: 60%; padding: 7px 8px 8px; gap: 2px; }
-  .tile--market .tile__info { height: 64%; }
-  .tile__kicker {
-    font-size: 9.5px;
-    line-height: 1.08;
-    white-space: normal;
-    overflow: visible;
-    text-overflow: clip;
-  }
-  .tile__title { font-size: 13.5px; line-height: 1.08; -webkit-line-clamp: 2; }
-  .tile__meta {
-    font-size: 10.5px;
-    line-height: 1.15;
-    white-space: normal;
-    overflow: hidden;
-    text-overflow: clip;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-  }
-  .tile__chips { gap: 2px; margin-top: 2px; }
-  .tile__chips span { font-size: 8.5px; line-height: 1.1; padding: 2px 4px; }
-  .tile__foot { font-size: 13.5px; line-height: 1; margin-top: auto; }
-  .tile__badge { top: 5px; left: 5px; padding: 2px 6px; font-size: 9px; }
-  .tile--produce .tile__photo img { padding: 10%; }
 }
 @media (max-width: 520px) {
+  /* Keep the FreshFind brand truly centered on small phones without
+     letting the three action buttons push it to the left. */
+  .topbar {
+    justify-content: center;
+    padding: 8px;
+  }
+  .brand-sign {
+    position: absolute;
+    left: 50%;
+    translate: -50% 0;
+    padding: 7px 10px 7px 8px;
+    column-gap: 6px;
+  }
+  .brand-sign__word { font-size: 18px; }
+  .brand-sign .leafmark { width: 25px; height: 25px; }
+  .topbar__tools {
+    position: absolute;
+    right: 8px;
+    gap: 4px;
+  }
+  .topbar__tools .icon-btn {
+    width: 38px;
+    height: 38px;
+  }
+
   .where a, .result { grid-template-columns: auto minmax(0, 1fr); }
   .where a .status, .result .status { grid-column: 2; justify-self: start; }
   .search__foot { flex-wrap: wrap; }
@@ -1137,11 +1129,76 @@ html.has-cursor .cursor { display: block; }
   .about__why { grid-template-columns: 1fr; }
   .clock { padding: 6px 10px; }
   .topbar__tools .clock { display: none; }
+  .world-wrap, .world, .intro, .globe-ui, .archive-ui {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+.tile {
+  border-radius: 13px;
+}
+.tile__info {
+  height: 60%;
+  padding: 7px 8px 8px;
+  gap: 2px;
+}
+.tile--market .tile__info {
+  height: 64%;
+}
+.tile__kicker {
+  font-size: 9.5px;
+  line-height: 1.08;
+
+  white-space: normal;
+  overflow: visible;
+  text-overflow: clip;
+}
+
+.tile__title {
+  font-size: 13.5px;
+  line-height: 1.08;
+  -webkit-line-clamp: 2;
+}
+.tile__meta {
+  font-size: 10.5px;
+  line-height: 1.15;
+
+  white-space: normal;
+  overflow: hidden;
+  text-overflow: clip;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.tile__chips {
+  gap: 2px;
+  margin-top: 2px;
+}
+.tile__chips span {
+  font-size: 8.5px;
+  line-height: 1.1;
+  padding: 2px 4px;
+}
+.tile__foot {
+  font-size: 13.5px;
+  line-height: 1;
+  margin-top: auto;
+}
+.tile__badge {
+  top: 5px;
+  left: 5px;
+
+  padding: 2px 6px;
+
+  font-size: 9px;
+}
+.tile--produce .tile__photo img {
+  padding: 10%;
+}
 .archive-ui__sign {
   left: 10px;
   right: 10px;
   translate: 0 0;
-  transform: none;
 
   width: auto;
   max-width: none;
