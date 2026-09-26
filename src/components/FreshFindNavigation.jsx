@@ -35,9 +35,6 @@ function MoreMenu({ section, onAuth }) {
       <div id="more-menu" className={`more-menu${open ? ' is-open' : ''}`} hidden={!open}>
         <img src="/assets/sprites/sprig-2.webp" alt="" className="more-menu__sprig" />
         {MORE.map((m) => <a key={m.id} href={m.to} onClick={() => setOpen(false)} aria-current={section === m.id ? 'page' : undefined}>{m.label}</a>)}
-        <hr />
-        <button type="button" onClick={() => { setOpen(false); onAuth('login') }}>Log in</button>
-        <button type="button" onClick={() => { setOpen(false); onAuth('signup') }}>Sign up</button>
       </div>
     </li>
   )

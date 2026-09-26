@@ -82,11 +82,21 @@ function measure(count, globeCount = count) {
     : wide ? Math.max(150, Math.min(vw * 0.205, avail * 0.43, fitR))
     : Math.min(vw * 0.26, avail * 0.46)
 
-  const cellW = tileW * 1.11
-  const cellH = tileH * 1.10
-  const rows = mobile
-    ? Math.max(1, Math.ceil(count / 3))
-    : Math.min(4, Math.max(1, Math.ceil(count / 6)))
+const cellW = tileW * 1.11
+const cellH = tileH * 1.10
+const cardsAcross = Math.max(
+  1,
+  Math.ceil(vw / cellW) + 1
+)
+const rows = mobile
+  ? Math.min(
+      3,
+      Math.max(1, Math.floor(count / Math.max(3, cardsAcross)))
+    )
+  : Math.min(
+      4,
+      Math.max(1, Math.floor(count / cardsAcross))
+    )
 
   return {
     vw, vh, mobile, tileW, tileH, R, cellW, cellH, rows, sideM, sideW, orbitRx,
@@ -325,11 +335,27 @@ const MarketWorld = forwardRef(function MarketWorld(
         const idx = tileIndex.current.get(key) ?? 0
         const visible = slot < order.length
 
-        /* archive home slot, eased when the filter/sort reshuffles */
-        const col = visible ? slot % cols : 0
-        const row = visible ? Math.floor(slot / cols) : 0
-        const tx = (col - (cols - 1) / 2) * g.cellW + (row % 2 ? g.cellW * 0.08 : 0)
-        const ty = (row - (rows - 1) / 2) * g.cellH + (col % 2 ? g.cellH * 0.035 : 0)
+        const row = visible ? slot % rows : 0
+        const col = visible ? Math.floor(slot / rows) : 0
+
+        const rowCount = visible
+          ? Math.ceil((count - row) / rows)
+          : 1
+
+        const rowWidth = Math.max(
+          g.cellW,
+          rowCount * g.cellW
+        )
+
+        const tx = visible
+          ? (col - (rowCount - 1) / 2) * g.cellW +
+            (row % 2 ? g.cellW * 0.08 : 0)
+          : 0
+
+        const ty = visible
+          ? (row - (rows - 1) / 2) * g.cellH +
+            (col % 2 ? g.cellH * 0.035 : 0)
+          : 0
         if (a.hx == null) { a.hx = tx; a.hy = ty }
         if (visible) {
           const k = 1 - Math.exp(-6 * dt)
@@ -366,7 +392,10 @@ const MarketWorld = forwardRef(function MarketWorld(
         if (hk && hk !== key) opG *= 0.62
 
         /* ---- archive pose ---- */
-        const sx = wrapX ? wrap(a.hx + pan.x, fieldW) : a.hx + pan.x
+        const rowWrapX = rowWidth > g.vw * 0.95
+        const sx = rowWrapX
+          ? wrap(a.hx + pan.x, rowWidth)
+          : a.hx + pan.x
         const sy = wrapY ? wrap(a.hy + pan.y, fieldH) : a.hy + pan.y
         const yaw = -clamp(sx / g.turn, -1.15, 1.15)
         const pitch = clamp(sy / (g.vh * 3.2), -0.14, 0.14)
@@ -375,7 +404,13 @@ const MarketWorld = forwardRef(function MarketWorld(
         pA[1] = sy + g.archiveY
         pA[2] = -g.depth * (1 - Math.cos(clamp(sx / g.posR, -1.3, 1.3))) - Math.abs(sy) * 0.08 - (g.mobile ? 60 : 150) + a.hover * 34
         let edge = 1
-        if (wrapX) edge *= 1 - smoothstep(fieldW / 2 - g.cellW * 0.9, fieldW / 2 - g.cellW * 0.1, Math.abs(sx))
+        if (rowWrapX) {
+          edge *= 1 - smoothstep(
+            rowWidth / 2 - g.cellW * 0.9,
+            rowWidth / 2 - g.cellW * 0.1,
+            Math.abs(sx)
+          )
+        }
         if (wrapY) edge *= 1 - smoothstep(fieldH / 2 - g.cellH * 0.9, fieldH / 2 - g.cellH * 0.12, Math.abs(sy))
         const sA = 1 + a.hover * 0.04
 
