@@ -1052,25 +1052,27 @@ html.has-cursor .cursor { display: block; }
   .globe-preview { display: none; }
 }
 @media (max-width: 520px) {
-  /* Keep the FreshFind brand truly centered on small phones without
-     letting the three action buttons push it to the left. */
+  /* Keep the WHITE navbar FreshFind sign on the LEFT.
+     The brown hero FreshFind sign is centered separately below. */
   .topbar {
-    justify-content: center;
-    padding: 8px;
+    justify-content: space-between;
+    padding: 8px 10px;
   }
   .brand-sign {
-    position: absolute;
-    left: 50%;
-    translate: -50% 0;
+    position: relative;
+    left: auto;
+    translate: 0 0;
     padding: 7px 10px 7px 8px;
     column-gap: 6px;
+    flex: 0 1 auto;
   }
   .brand-sign__word { font-size: 18px; }
   .brand-sign .leafmark { width: 25px; height: 25px; }
   .topbar__tools {
-    position: absolute;
-    right: 8px;
+    position: static;
+    margin-left: auto;
     gap: 4px;
+    flex: 0 0 auto;
   }
   .topbar__tools .icon-btn {
     width: 38px;
@@ -1101,6 +1103,10 @@ html.has-cursor .cursor { display: block; }
     font-size: clamp(40px, 12vw, 52px);
     padding: 6px 16px;
     max-width: calc(100vw - 36px);
+    justify-self: center;
+    justify-content: center;
+    margin-inline: auto;
+    text-align: center;
   }
   .intro__panel {
     width: min(100%, 430px);

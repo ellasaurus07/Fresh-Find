@@ -166,7 +166,7 @@ function measure(count, globeCount = count) {
 
   const tileH = Math.round(
 
-    tileW * (phone ? 1.58 : mobile ? 1.42 : 1.22)
+    tileW * (phone ? 1.40 : mobile ? 1.38 : 1.22)
 
   )
 
@@ -296,7 +296,7 @@ function measure(count, globeCount = count) {
 
     archiveY: mobile
 
-      ? (top - bottomUi) / 2 + 8
+      ? vh * 0.075
 
       : vh * 0.075,
 
@@ -937,7 +937,7 @@ const MarketWorld = forwardRef(function MarketWorld(
 
         if (rowWrapX) {
 
-          edge *= 1 - smoothstep(
+          const edgeX = 1 - smoothstep(
 
             rowWidth / 2 - g.cellW * 0.9,
 
@@ -947,9 +947,28 @@ const MarketWorld = forwardRef(function MarketWorld(
 
           )
 
+          // On phones keep side cards visible instead of fading them almost away.
+          edge *= g.mobile ? (0.58 + 0.42 * edgeX) : edgeX
+
         }
 
-        if (wrapY) edge *= 1 - smoothstep(fieldH / 2 - g.cellH * 0.9, fieldH / 2 - g.cellH * 0.12, Math.abs(sy))
+        if (wrapY) {
+
+          const edgeY = 1 - smoothstep(
+
+            fieldH / 2 - g.cellH * 0.9,
+
+            fieldH / 2 - g.cellH * 0.12,
+
+            Math.abs(sy)
+
+          )
+
+          // The mobile archive should behave like the desktop/laptop wall:
+          // two readable rows that can move vertically, not a row that fades out.
+          edge *= g.mobile ? 1 : edgeY
+
+        }
 
         const sA = 1 + a.hover * 0.04
 
