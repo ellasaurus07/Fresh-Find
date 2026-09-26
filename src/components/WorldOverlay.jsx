@@ -57,7 +57,7 @@ export default function WorldOverlay({ mode, onUnfold, onFold, onChip, onTagHove
         </div>
         <p className="globe-ui__hint" aria-hidden="true">
           <span className="hint--desk">Drag to rotate · Scroll to unfold</span>
-          <span className="hint--touch">Swipe to rotate · tap to open</span>
+          <span className="hint--touch">Swipe to rotate · Tap explore markets to open</span>
         </p>
         <button type="button" className="btn btn--primary btn--lg globe-ui__explore" onClick={onUnfold} tabIndex={mode === 'globe' ? 0 : -1} data-cursor="open">
           <span>Explore markets</span><Icon name="arrow" />
@@ -108,7 +108,7 @@ export default function WorldOverlay({ mode, onUnfold, onFold, onChip, onTagHove
         </div>
         <p className="archive-ui__hint" aria-hidden="true">
           <span className="hint--desk">Scroll or drag to browse · arrow keys work too</span>
-          <span className="hint--touch">Swipe to browse · tap to open</span>
+          <span className="hint--touch">Swipe to browse · tap explore to open</span>
         </p>
       </div>
     </>
