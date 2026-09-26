@@ -48,10 +48,20 @@ export default function useWheelIntent(targetRef, opts) {
       const { dx, dy } = normalizeWheel(e, { w: window.innerWidth, h: window.innerHeight })
 
       if (mode === 'archive') {
+       const continuous = looksContinuous(e)
+
+      if (continuous) {
         const step = archiveStep(dx, dy)
         o.applyArchive(step.x, step.y)
         return
       }
+
+      const wheelDelta = dx !== 0 ? dx : dy
+      const step = archiveStep(wheelDelta, 0)
+
+      o.applyArchive(step.x, 0)
+      return
+    }
       if (mode === 'morphing' && o.isTweening()) return
       if (mode !== 'globe' && mode !== 'morphing') return
 

@@ -318,8 +318,15 @@ const MarketWorld = forwardRef(function MarketWorld(
       const wrapX = fieldW > g.vw * 0.95
       const wrapY = fieldH > g.vh * 0.72
       const pan = physics.pan.current
-      if (!wrapX) pan.x += (0 - pan.x) * Math.min(1, dt * 6)
-      if (!wrapY) pan.y += (0 - pan.y) * Math.min(1, dt * 6)
+      if (!wrapX) {
+        pan.x = 0
+        physics.velocity.current.x = 0
+      }
+
+      if (!wrapY) {
+        pan.y = 0
+        physics.velocity.current.y = 0
+      }
 
       const hk = hoverKey.current
       const n1 = tiles.length
@@ -532,6 +539,24 @@ const MarketWorld = forwardRef(function MarketWorld(
     }
   }, [physics, unfold])
 
+  useEffect(() => {
+  const handleWindowKey = (e) => {
+    if (!activeRef.current) return
+    if (
+      e.target.closest?.(
+        'input, textarea, select, [contenteditable="true"]'
+      )
+    ) {
+      return
+    }
+    onKeyDown(e)
+  }
+  window.addEventListener('keydown', handleWindowKey)
+  return () => {
+    window.removeEventListener('keydown', handleWindowKey)
+  }
+}, [onKeyDown])
+
   // Called when the visitor leaves the Market World via the FreshFind logo / Home,
   // rather than the "Return to globe" control. Snaps everything back to the
   // default CLOSED GLOBE state with no tween (the world is invisible behind the
@@ -575,7 +600,6 @@ const MarketWorld = forwardRef(function MarketWorld(
     <div
       ref={rootRef}
       className={`world world--${mode}${hovered ? ' has-hover' : ''}`}
-      onKeyDown={onKeyDown}
       data-cursor={mode === 'archive' ? 'drag' : 'rotate'}
       aria-roledescription={mode === 'archive' ? 'curved market archive' : 'market globe'}
     >
@@ -599,7 +623,12 @@ const MarketWorld = forwardRef(function MarketWorld(
               onClick={handleClick}
               onEnter={() => modeRef.current !== 'morphing' && setHover(t.key)}
               onLeave={() => hoverKey.current === t.key && setHover(null)}
-              onFocus={() => handleFocusTile(t.key)}
+              onFocus={(e) => {
+                setHover(t.key)
+                if (e.currentTarget.matches(':focus-visible')) {
+                  handleFocusTile(t.key)
+                }
+              }}
               onBlur={() => hoverKey.current === t.key && setHover(null)}
               cursor={cursor}
             />

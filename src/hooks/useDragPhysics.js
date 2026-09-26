@@ -9,7 +9,7 @@ import { useEffect, useMemo, useRef } from 'react'
 // ---------------------------------------------------------------------------
 const ROTATE_PER_PX = 0.0058
 const ROTATE_FRICTION = 2.3
-const PAN_FRICTION = 3.2
+const PAN_FRICTION = 2.2
 export const MAX_PITCH = 0.62
 const VELOCITY_FLOOR = 0.0006
 const PAN_FLOOR = 0.5
