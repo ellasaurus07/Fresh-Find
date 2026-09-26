@@ -199,7 +199,6 @@ const marketChips = chipPriority
   // unfolded behind the scenes. The world is fully hidden (opacity 0 / not
   // interactive) while `home` is true, so resetting it here is invisible: the
   // next "Enter the Market" always shows the closed globe again.
-  useEffect(() => { if (home) worldRef.current?.resetClosed() }, [home])
 
   // ALL is the globe's resting state: whenever the world is (back) on the globe,
   // drop any archive filter/search so the sphere is never a filtered subset.
