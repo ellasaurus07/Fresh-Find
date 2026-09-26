@@ -75,7 +75,7 @@ export default function BookmarksPanel({ onClose }) {
     >
       {bookmarks.count === 0 ? (
         <div className="empty empty--saved">
-          <img src="/assets/sprites/veg-basket.png" alt="" width="300" />
+          <img src="/assets/sprites/veg-basket-optimized.webp" alt="" width="280" height="214" loading="eager" decoding="async"/>
           <p>Your basket is empty. Tap the heart on any market or produce page to keep it here — then add notes, export or share your list.</p>
           <div className="empty__ctas">
             <a className="btn btn--primary" href="#/markets"><span>Browse markets</span></a>
