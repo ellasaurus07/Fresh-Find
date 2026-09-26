@@ -124,15 +124,23 @@ function measure(count, globeCount = count) {
 
   const vv = window.visualViewport
 
+  // Visible Safari viewport.
   const vw = Math.round(vv?.width ?? window.innerWidth)
-
   const vh = Math.round(vv?.height ?? window.innerHeight)
 
-
-
-  const mobile = vw < 720
-
-  const phone = vw <= 520
+  // Safari Page Zoom / Display Zoom can make an iPhone report a wider CSS
+  // viewport. Classify the device from the physical screen's short side so
+  // phone sizing remains stable, while keeping the real visible width for
+  // centering and wrapping calculations.
+  const screenShort = Math.round(
+    Math.min(
+      window.screen?.width || vw,
+      window.screen?.height || vh
+    )
+  )
+  const mobile = vw <= 900 || screenShort <= 900
+  const phone = screenShort <= 520
+  const sizeW = phone ? Math.min(vw, screenShort) : vw
 
 
 
@@ -142,11 +150,11 @@ function measure(count, globeCount = count) {
 
   const tileW = phone
 
-    ? Math.round(clamp(vw * 0.34, 118, 136))
+    ? Math.round(clamp(sizeW * 0.34, 118, 136))
 
     : mobile
 
-      ? Math.round(clamp(vw * 0.36, 126, 150))
+      ? Math.round(clamp(sizeW * 0.36, 126, 150))
 
       : Math.round(
 
@@ -198,7 +206,7 @@ function measure(count, globeCount = count) {
 
   const R = mobile
 
-    ? Math.min(vw * 0.34, avail * 0.35)
+    ? Math.min(sizeW * 0.34, avail * 0.35)
 
     : wide
 
@@ -253,6 +261,8 @@ function measure(count, globeCount = count) {
     mobile,
 
     phone,
+
+    sizeW,
 
     tileW,
 
